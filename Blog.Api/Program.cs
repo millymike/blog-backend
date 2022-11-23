@@ -33,7 +33,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContextFactory<DataContext>(options =>
 {
-    options.UseMySql(appSettings.MySqlDsn, ServerVersion.AutoDetect(appSettings.MySqlDsn));
+    options.UseNpgsql(appSettings.PostgresDsn);
 });
 builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddScoped<IUserService, UserService>();
@@ -49,7 +49,7 @@ builder.Services.AddSwaggerGen(options =>
         Scheme = JwtBearerDefaults.AuthenticationScheme,
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Kindly enter token issued by ditadev (\"bearer {token}\")"
+        Description = "Kindly enter token issued by mikkey (\"bearer {token}\")"
     });
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
     {

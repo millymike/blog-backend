@@ -5,21 +5,24 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace Blog.Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20221025082639_Second")]
-    partial class Second
+    [Migration("20221123021445_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "6.0.9")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+
+            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
             modelBuilder.Entity("AuthorRole", b =>
                 {
@@ -27,7 +30,7 @@ namespace Blog.Persistence.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<int>("RolesId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("AuthorsAuthorId", "RolesId");
 
@@ -42,36 +45,38 @@ namespace Blog.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("AuthorId"));
+
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<string>("EmailAddress")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasColumnType("text");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("LastLogin")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("LastName")
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<string>("PasswordHash")
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<DateTime?>("VerifiedAt")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("AuthorId");
 
@@ -87,38 +92,40 @@ namespace Blog.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("PostId"));
+
                     b.Property<long>("AuthorId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("Body")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<string>("CategoryName")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasColumnType("text");
 
                     b.Property<string>("CoverImagePath")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("Created")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Summary")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<string>("Tags")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("Updated")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("PostId");
 
@@ -132,7 +139,7 @@ namespace Blog.Persistence.Migrations
             modelBuilder.Entity("Blog.Models.Category", b =>
                 {
                     b.Property<string>("CategoryName")
-                        .HasColumnType("varchar(255)");
+                        .HasColumnType("text");
 
                     b.HasKey("CategoryName");
 
@@ -142,7 +149,7 @@ namespace Blog.Persistence.Migrations
             modelBuilder.Entity("Blog.Models.Role", b =>
                 {
                     b.Property<int>("Id")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
