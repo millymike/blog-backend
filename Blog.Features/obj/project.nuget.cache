@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "w6P7g352pOJcb3Wg73dV4gMdYMCeFBmFA9k827Pw1uYtAnUekOLbOIvnNAMznWtvHRm1V9giPQIMyKKPquRGgg==",
+  "dgSpecHash": "g1TLHQCco+X6riPJVeWNc5OJ7L8Ufrngme376eOA+dz/gGY0sDZGg/W42Vf+Y5EflA4u2E814wIFDCaS7cQizA==",
   "success": true,
   "projectFilePath": "/home/mike/PROJECTS/BLOG/blog-backend/Blog.Features/Blog.Features.csproj",
   "expectedPackageFiles": [
     "/home/mike/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
-    "/home/mike/.nuget/packages/mailkit/3.4.1/mailkit.3.4.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/mailkit/3.4.2/mailkit.3.4.2.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.9/microsoft.aspnetcore.authentication.jwtbearer.6.0.9.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.entityframeworkcore/6.0.9/microsoft.entityframeworkcore.6.0.9.nupkg.sha512",
@@ -29,7 +29,7 @@
     "/home/mike/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/home/mike/.nuget/packages/microsoft.win32.systemevents/5.0.0/microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "/home/mike/.nuget/packages/mimekit/3.4.1/mimekit.3.4.1.nupkg.sha512",
+    "/home/mike/.nuget/packages/mimekit/3.4.2/mimekit.3.4.2.nupkg.sha512",
     "/home/mike/.nuget/packages/mysqlconnector/2.1.2/mysqlconnector.2.1.2.nupkg.sha512",
     "/home/mike/.nuget/packages/npgsql/6.0.7/npgsql.6.0.7.nupkg.sha512",
     "/home/mike/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.7/npgsql.entityframeworkcore.postgresql.6.0.7.nupkg.sha512",

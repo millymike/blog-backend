@@ -15,10 +15,10 @@
           }
         }
       },
-      "MailKit/3.4.1": {
+      "MailKit/3.4.2": {
         "type": "package",
         "dependencies": {
-          "MimeKit": "3.4.1"
+          "MimeKit": "3.4.2"
         },
         "compile": {
           "lib/net6.0/MailKit.dll": {
@@ -418,7 +418,7 @@
           }
         }
       },
-      "MimeKit/3.4.1": {
+      "MimeKit/3.4.2": {
         "type": "package",
         "dependencies": {
           "Portable.BouncyCastle": "1.9.0",
@@ -921,10 +921,10 @@
         "readme.md"
       ]
     },
-    "MailKit/3.4.1": {
-      "sha512": "XsrxxJDNb9KOtCHjXOlQjUGMKocZ5+DtKIH7cCoc6IRd7rZmfjDof0ITK16dAJhnTYcCvPa90fpYa6/4QkvmIw==",
+    "MailKit/3.4.2": {
+      "sha512": "BRt9YHSr5LtxUeKrsJfxuJ5t5jb+6a2dRWWZvxt/5Tm3Z+nKJ3HBvw7SaMq2ze9e2x0Izw0SS8Q7H31PxBaXSg==",
       "type": "package",
-      "path": "mailkit/3.4.1",
+      "path": "mailkit/3.4.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -947,7 +947,7 @@
         "lib/netstandard2.1/MailKit.dll",
         "lib/netstandard2.1/MailKit.pdb",
         "lib/netstandard2.1/MailKit.xml",
-        "mailkit.3.4.1.nupkg.sha512",
+        "mailkit.3.4.2.nupkg.sha512",
         "mailkit.nuspec"
       ]
     },
@@ -1502,10 +1502,10 @@
         "version.txt"
       ]
     },
-    "MimeKit/3.4.1": {
-      "sha512": "0UmjauTJDukShQlwmClY0i5iRz1zwVxAMvM2VoJ5rM0FUSNQC34OZJCKMTAGEJAWYAsTh5hXZIufnUbbm/3jkQ==",
+    "MimeKit/3.4.2": {
+      "sha512": "8bshZj8peXR9OaGb1fJJto6YWGG9zGGbDwY5Uylkz08mFU2tHKdkGtwMyFdtO6ZVq1aW41QYj+cN+4vRlE0O5Q==",
       "type": "package",
-      "path": "mimekit/3.4.1",
+      "path": "mimekit/3.4.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1528,7 +1528,7 @@
         "lib/netstandard2.1/MimeKit.dll",
         "lib/netstandard2.1/MimeKit.pdb",
         "lib/netstandard2.1/MimeKit.xml",
-        "mimekit.3.4.1.nupkg.sha512",
+        "mimekit.3.4.2.nupkg.sha512",
         "mimekit.nuspec"
       ]
     },
@@ -2234,7 +2234,7 @@
     "net6.0": [
       "BCrypt.Net-Next >= 4.0.3",
       "Blog.Persistence >= 1.0.0",
-      "MailKit >= 3.4.1",
+      "MailKit >= 3.4.2",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.9",
       "StackExchange.Redis >= 2.6.70"
     ]
@@ -2286,7 +2286,7 @@
           },
           "MailKit": {
             "target": "Package",
-            "version": "[3.4.1, )"
+            "version": "[3.4.2, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
