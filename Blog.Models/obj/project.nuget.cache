@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MjrraLl/h9XMMrVEvusDi89v9sBElPFtO2R6whTWXvFIwmX40pH7vxXMRT7eUJjVstHHiCNHc5TceszgCSwSoA==",
+  "dgSpecHash": "ORRW69K3LpeoS0To7ciX4zc59u5yPzOikU1cX1dlwPZHK2tOI7YgQBAm4eudAQXRna4JoSncH3LiLkN7S4PlUA==",
   "success": true,
-  "projectFilePath": "/home/mike/PROJECTS/BLOG/blog-backend/Blog.Models/Blog.Models.csproj",
+  "projectFilePath": "/Users/mike/PROJECT/BLOG/blog-backend/Blog.Models/Blog.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,36 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net8.0": []
   },
   "packageFolders": {
-    "/home/mike/.nuget/packages/": {}
+    "/Users/mike/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mike/PROJECTS/BLOG/blog-backend/Blog.Models/Blog.Models.csproj",
+      "projectUniqueName": "/Users/mike/PROJECT/BLOG/blog-backend/Blog.Models/Blog.Models.csproj",
       "projectName": "Blog.Models",
-      "projectPath": "/home/mike/PROJECTS/BLOG/blog-backend/Blog.Models/Blog.Models.csproj",
-      "packagesPath": "/home/mike/.nuget/packages/",
-      "outputPath": "/home/mike/PROJECTS/BLOG/blog-backend/Blog.Models/obj/",
+      "projectPath": "/Users/mike/PROJECT/BLOG/blog-backend/Blog.Models/Blog.Models.csproj",
+      "packagesPath": "/Users/mike/.nuget/packages/",
+      "outputPath": "/Users/mike/PROJECT/BLOG/blog-backend/Blog.Models/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/mike/.nuget/NuGet/NuGet.Config"
+        "/Users/mike/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -41,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100-preview.2.23157.25/RuntimeIdentifierGraph.json"
       }
     }
   }
