@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lGpaXCgC4b8aJU4I5pgQBvtD7k0uW2HUc/L05B9HKvVP7cb++e6VLJnGFEtwiGwf23Qjn+GYRXHpLF3TCghsKw==",
+  "dgSpecHash": "jfUzEsfyi1bO2b2oRGOLQx+r0zCvY2rypobvBEVl0qlzE2Zd+wI9FCs0eLImHVNNPy6guLXj8D2TS6CdA8KNiw==",
   "success": true,
   "projectFilePath": "/Users/mike/PROJECT/BLOG/blog-backend/Blog.Features/Blog.Features.csproj",
   "expectedPackageFiles": [
